@@ -1,3 +1,7 @@
+CALL bronze.load_bronze();
+-- run this line only to run the whole below code
+
+
 CREATE OR REPLACE PROCEDURE bronze.load_bronze()
 LANGUAGE plpgsql
 AS $$
@@ -45,3 +49,4 @@ BEGIN
 	RAISE NOTICE 'LOADING COMPLETED';
 END;
 $$;
+
